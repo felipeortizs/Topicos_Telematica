@@ -1,0 +1,27 @@
+{
+  "name": "reto-2",
+  "version": "1.0.0",
+  "description": "Estudiante(s): Juan Felipe Ortiz, jfortizs@eafit.edu.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.9.1",
+    "@grpc/proto-loader": "^0.7.9",
+    "amqp": "^0.2.7",
+    "amqplib": "^0.10.3",
+    "dependencies": "^0.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fast-glob": "^3.3.1",
+    "glob": "^10.3.3",
+    "grpc-web": "^1.4.2",
+    "license": "^1.0.3",
+    "name": "^0.0.2",
+    "path": "^0.12.7",
+    "version": "^0.1.2"
+  }
+}
