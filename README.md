@@ -1,6 +1,6 @@
-Documentación de Reto 2
+RETO 2
 
-Resumen de Servicios
+Servicios
 
 Listar Archivos: Lista todos los archivos en el directorio especificado.
 
@@ -28,7 +28,7 @@ sudo docker start rabbit-server
 
 python3 consumerQueue.py
 
-Cómo Usar
+¿Cómo Usar?
 
 Listar Archivos:
 
@@ -46,6 +46,5 @@ Reemplaza <PATRON_DE_BUSQUEDA> con el patrón que deseas buscar.
 
 Manejo de Errores:
 
-Si el servicio gRPC está inactivo cuando se realiza una solicitud a través del API Gateway, la solicitud será enviada a RabbitMQ. 
+Si el servicio gRPC está inactivo cuando se realiza una solicitud a través del API Gateway, la solicitud será enviada a RabbitMQ (MoM). 
 
-# Topicos en Telematica
