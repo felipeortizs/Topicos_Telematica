@@ -8,7 +8,7 @@ Buscar Archivos: Busca archivos en el directorio basándose en un patrón dado.
 
 Instancias:
 
-API Gateway: 54.226.83.96
+API Gateway: 54.157.183.155
 
 En esta instancia de sebera correr el codigo proxy.js
 
