@@ -34,13 +34,13 @@ Listar Archivos:
 
 Para listar todos los archivos, realiza una solicitud a:
 
-http://54.226.83.96/list
+http://54.157.183.155/list
 
 Buscar Archivos
 
 Para buscar archivos, realiza una solicitud GET con el patrón de búsqueda deseado como parámetro de consulta:
 
-http://54.226.83.96/search?name=<PATRON_DE_BUSQUEDA>
+http://54.157.183.155/search?name=<PATRON_DE_BUSQUEDA>
 
 Reemplaza <PATRON_DE_BUSQUEDA> con el patrón que deseas buscar.
 
