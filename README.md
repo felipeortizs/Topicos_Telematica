@@ -10,13 +10,13 @@ Instancias:
 
 API Gateway: 54.157.183.155
 
-En esta instancia de sebera correr el codigo proxy.js
+En esta instancia se debe correr el codigo proxy.js
 
 sudo node proxy.js
 
 Servicio gRPC: 107.22.231.147
 
-En esta instancia deberia de correr el codigo Server.js
+En esta instancia se debe correr el codigo Server.js
 
 sudo node Server.js
 
