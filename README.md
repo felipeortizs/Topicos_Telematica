@@ -1,4 +1,4 @@
-Estudiante(s): Juan Felipe Ortiz Salgado, jfortizs@eafit.edu.co
+Estudiante: Juan Felipe Ortiz Salgado, jfortizs@eafit.edu.co
 
 Profesor: Edwin Montoya
 
