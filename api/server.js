@@ -17,7 +17,7 @@ const servicePackageDefinition = protoLoader.loadSync(serviceProtoPATH);
 const serviceService = grpc.loadPackageDefinition(
   servicePackageDefinition
 ).FileService;
-const serviceClient = new serviceService(`107.22.231.147
+const serviceClient = new serviceService(`107.22.231.147  
 :${serviceServicePORT}`,
   grpc.credentials.createInsecure()
 );
@@ -25,15 +25,15 @@ const serviceClient = new serviceService(`107.22.231.147
 function sendToQueue(message) {
   amqp.connect("amqp://user:password@23.20.48.82", (error0, connection) => {
     if (error0) {
-      console.error("Fallo la conección con el conejoMQ", error0);
+      console.error("Fallo con el RabbitMQ", error0);
       return;
     }
     connection.createChannel((error1, channel) => {
       if (error1) {
-        console.error("No se pudo crear un canal", error1);
+        console.error("No se creo un canal", error1);
         return;
       }
-      const queue = "my_queue";
+      const queue = "my_app";
       channel.assertQueue(queue, {
         durable: true,
       });
@@ -46,11 +46,11 @@ function sendToQueue(message) {
 app.get("/list", (req, res) => {
   serviceClient.ListFiles({}, (error, response) => {
     if (error) {
-      console.error("Error al listar los archivos", error);
+      console.error("Error al listar archivos", error);
       sendToQueue("List");
       res
         .status(500)
-        .send("Error llamando el microservicio, pasamos con el conejoMQ");
+        .send("Error llamando el microservicio, pasamos con al RabbitMQ");
       return;
     }
     res.json(response.filenames);
@@ -66,7 +66,7 @@ app.get("/search", (req, res) => {
       sendToQueue(message);
       res
         .status(500)
-        .send("Error llamando el microservicio, pasamos con el conejoMQ");
+        .send("Error llamando el microservicio, pasamos con el RabbitMQ");
       return;
     }
     res.json(response.SearchResponse);
